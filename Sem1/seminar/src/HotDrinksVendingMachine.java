@@ -1,9 +1,10 @@
 import java.util.List;
 
-public class BottleOfWaterVendingMachine implements VendingMachine {
-    private final List<Product> products;
+public class HotDrinksVendingMachine implements VendingMachine {
 
-    public BottleOfWaterVendingMachine(List<Product> products) {
+    private List<Product> products;
+
+    public HotDrinksVendingMachine(List<Product> products) {
         this.products = products;
     }
 
@@ -16,14 +17,13 @@ public class BottleOfWaterVendingMachine implements VendingMachine {
         throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
     }
 
-    public BottleOfWater getProduct(String name, double volume) {
+    public HotDrinks getProduct(String name, double volume, int temperature) {
         for (Product product : products) {
-            if (product instanceof BottleOfWater) {
-                if (product.getName().equalsIgnoreCase(name) && ((BottleOfWater) product).getVolume() == volume) {
-                    return (BottleOfWater) product;
+            if (product instanceof HotDrinks) {
+                if (product.getName().equalsIgnoreCase(name) && ((HotDrinks) product).getVolume() == volume && ((HotDrinks) product).getTemperature() == temperature) {
+                    return (HotDrinks) product;
                 }
             }
-
         }
         throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
     }

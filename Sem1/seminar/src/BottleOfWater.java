@@ -1,17 +1,17 @@
 public class BottleOfWater extends Product {
-    private int volume;
+    private Double volume;
 
 
-    public BottleOfWater(String name, double cost, int volume) {
+    public BottleOfWater(String name, double cost, Double volume) {
         super(name, cost);
         this.volume = volume;
     }
 
-    public int getVolume() {
+    public Double getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public void setVolume(Double volume) {
         this.volume = volume;
     }
 
