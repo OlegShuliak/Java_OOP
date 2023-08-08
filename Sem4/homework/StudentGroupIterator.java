@@ -1,13 +1,13 @@
-package Comparator;
+
 
 import java.util.Iterator;
 import java.util.List;
 
-public class StudentGroupIterator implements Iterator<Student3> {
+public class StudentGroupIterator implements Iterator<Student> {
     private int counter;
-    private  final List<Student3> studentList;
+    private  final List<Student> studentList;
 
-    public StudentGroupIterator(Comparator.StudentGroup studentGroup) {
+    public StudentGroupIterator(StudentGroup studentGroup) {
         this.studentList = studentGroup.getStudentsList();
         this.counter = 0;
     }
@@ -18,7 +18,7 @@ public class StudentGroupIterator implements Iterator<Student3> {
     }
 
     @Override
-    public Student3 next() {
+    public Student next() {
         if (!hasNext()){
             return null;
         }

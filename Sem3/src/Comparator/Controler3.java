@@ -3,7 +3,7 @@ package Comparator;
 import java.util.List;
 
 public class Controler3 {
-    private final StudentGroupService3 studentGroupService = new StudentGroupService3();
+    private final StudentGroupService studentGroupService = new StudentGroupService();
 
     public void removeStudentByFIO(String lastName, String secondName, String firstName){
         studentGroupService.removeStudentByFIO(lastName,secondName,firstName);
