@@ -7,7 +7,7 @@ public class StudentGroupIterator implements Iterator<Student3> {
     private int counter;
     private  final List<Student3> studentList;
 
-    public StudentGroupIterator(Comparator.StudentGroup studentGroup) {
+    public StudentGroupIterator(Comparator.StudentGroupt3 studentGroup) {
         this.studentList = studentGroup.getStudentsList();
         this.counter = 0;
     }
