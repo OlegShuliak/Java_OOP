@@ -29,4 +29,15 @@ public class Controller {
         studyGroupService.formStudyGroup(teacher, studentList);
     }
 
+    public void getGroupID(){
+        List<User> studyGroup = studyGroupService.getStudyGroup();
+        for (User user: studyGroup) {
+            if (user instanceof Teacher){
+                System.out.println( "Teacher ID " + ((Teacher) user).getTeacherId());
+            }
+            if (user instanceof Student){
+                System.out.println("Student ID " + ((Student) user).getStudentId());
+            }
+        }
+    }
 }

@@ -17,4 +17,5 @@ public class StudyGroupService {
     public List<User> getStudyGroup(){
         return studyGroup;
     }
+
 }
