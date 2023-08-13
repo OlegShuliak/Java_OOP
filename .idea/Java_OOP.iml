@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Sem4/homework" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sem5/seminar&amp;homework/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Sem4/src" />
+      <excludeFolder url="file://$MODULE_DIR$/Sem6/homework/src" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
